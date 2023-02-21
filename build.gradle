@@ -6,7 +6,7 @@ plugins {
 
 group = 'com.websocket.test'
 version = '0.0.1-SNAPSHOT'
-sourceCompatibility = '17'
+sourceCompatibility = '1.8'
 
 repositories {
 	mavenCentral()
@@ -16,6 +16,8 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	implementation 'org.springframework.boot:spring-boot-starter-websocket'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    /**자동 reload */
+    implementation 'org.springframework.boot:spring-boot-devtools'
 }
 
 tasks.named('test') {
